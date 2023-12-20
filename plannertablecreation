@@ -1,0 +1,18 @@
+Create Table course(
+id int not null Auto_increment,
+name varchar(30),
+instructor varchar(30),
+schedule varchar(20),
+primary key (id)
+);
+
+Create Table event(
+id int not null Auto_increment,
+name varchar(40),
+category varchar(10), 
+duedate date null,
+description text,
+courseid int, 
+primary key (id),
+Foreign Key (courseid) References course(id)
+);
