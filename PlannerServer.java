@@ -4,8 +4,8 @@ import java.sql.*;
 
 public class PlannerServer {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver"; // replace the values below with your exact credentials
-    static final String userName = "root";
-    static final String password = "Gorillaglue2";
+    static final String userName = "Enter username";
+    static final String password = "Enter password";
     static final String url = "jdbc:mysql://localhost:3306/studentplanner";
 
     public String secret() {
